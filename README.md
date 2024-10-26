@@ -15,9 +15,9 @@ The system continuously retrieves weather data from the OpenWeatherMap API. You 
 
 # Dependencies
 ## Required Software
- -**Java 11+** for the application code
+ -**Java 17+** for the application code
  - **Maven** for dependency management
-- **PostgreSQL** (or another relational database) for persistent storage
+- **MySQL** (or another relational database) for persistent storage
 
 # Design Choices
 * Real-Time Data Processing: The system is designed to retrieve and process data continuously at configurable intervals, ensuring timely insights.
