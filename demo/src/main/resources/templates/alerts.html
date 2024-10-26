@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Alerts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Weather Alerts</h1>
+    <ul class="list-group">
+        <li th:each="alert : ${alerts}" class="list-group-item" th:text="${alert}"></li>
+        <li th:if="${#lists.isEmpty(alerts)}" class="list-group-item">No alerts at this time.</li>
+    </ul>
+</div>
+</body>
+</html>
